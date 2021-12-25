@@ -19,4 +19,11 @@
 .Header a {
   vertical-align: middle;
 }
+
+.Header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
 /*# sourceMappingURL=Header.css.map */

@@ -11,7 +11,7 @@ function Header() {
           alt="Store Logo"
         />
       </Link>
-      <div>
+      <div className="Header__links">
         <Link to="/">Shop</Link>
         <Link to="/cart">Cart</Link>
       </div>
