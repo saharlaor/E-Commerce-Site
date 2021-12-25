@@ -7,6 +7,11 @@ import "./Cart.css";
 export class Cart extends Component {
   state = { items: JSON.parse(localStorage.getItem("products")) };
 
+  removeAll = () => {
+    localStorage.setItem("products", JSON.stringify([]));
+    this.setState({ items: [] });
+  };
+
   removeItem = (id) => {
     const newProducts = this.state.items.filter((item) => item.id !== id);
     localStorage.setItem("products", JSON.stringify(newProducts));
@@ -22,7 +27,14 @@ export class Cart extends Component {
 
   render() {
     const items = this.generateCartItems();
-    return <div className="Cart">{items}</div>;
+    return (
+      <div className="Cart">
+        <div className="Cart__items">{items}</div>
+        <button onClick={this.removeAll} className="Cart__buy">
+          Buy Everything
+        </button>
+      </div>
+    );
   }
 }
 

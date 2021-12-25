@@ -1,3 +1,16 @@
 .Cart {
   display: inline-block;
+  width: 100%;
+}
+
+.Cart__items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Cart__buy {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  margin: 1rem;
 }

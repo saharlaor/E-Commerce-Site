@@ -16,7 +16,7 @@ function Product({ product }) {
       <img src={product.img} alt={product.name} />
       <h4>{product.name}</h4>
       <p>{product.desc}</p>
-      <span>{product.price}</span>
+      <div>{product.price}$</div>
       <button onClick={() => addToCart(product)}>Add to cart</button>
     </div>
   );

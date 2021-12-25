@@ -1,4 +1,9 @@
 .ProductList {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
 }
-/*# sourceMappingURL=a.css.map */
+/*# sourceMappingURL=ProductList.css.map */
