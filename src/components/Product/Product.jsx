@@ -3,9 +3,10 @@ import React from "react";
 import "./Product.css";
 
 const addToCart = (product) => {
-  const products = JSON.parse(localStorage.getItem("products"));
-  const newProducts = products ? [...products, product] : [product];
-  console.log(newProducts);
+  const products = JSON.parse(localStorage.getItem("products")) || [];
+  const tempItem = products.find((item) => item.id === product.id);
+  tempItem ? tempItem.amount++ : products.push({ ...product, amount: 1 });
+  const newProducts = products ? products : [product];
   localStorage.setItem("products", JSON.stringify(newProducts));
 };
 

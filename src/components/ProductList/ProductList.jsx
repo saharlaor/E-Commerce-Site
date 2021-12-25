@@ -7,7 +7,9 @@ import Product from "../Product/Product";
 const getProducts = (type) => {
   const products = data[type];
   console.log(products);
-  return products.map((product, i) => <Product key={i} product={product} />);
+  return products.map((product) => (
+    <Product key={product.id} product={product} />
+  ));
 };
 
 function ProductList(props) {
