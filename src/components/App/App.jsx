@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Route path="/" component={Shop} />
-        <Route path="/cart" component={Cart} />
+        <Route exact path="/" component={Shop} />
+        <Route exact path="/cart" component={Cart} />
       </Router>
     </div>
   );
