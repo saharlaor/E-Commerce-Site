@@ -1,0 +1,22 @@
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background: #9bf;
+  font-size: 1.5rem;
+}
+
+.Header img {
+  height: 2rem;
+}
+
+.Header a {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=Header.css.map */
